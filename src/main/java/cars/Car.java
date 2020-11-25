@@ -25,4 +25,8 @@ public abstract class Car implements ICalculateValue {
             this.totalPrice += option.getValue();
         }
     }
+
+    public double getTotalPrice(){
+        return this.totalPrice;
+    }
 }
