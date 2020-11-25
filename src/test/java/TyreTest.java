@@ -1,4 +1,4 @@
-import Options.Tyre;
+import options.Tyre;
 import org.junit.Before;
 import org.junit.Test;
 

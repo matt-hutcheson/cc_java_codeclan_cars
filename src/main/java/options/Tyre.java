@@ -1,6 +1,6 @@
-package Options;
+package options;
 
-public class Tyre extends Options implements IHaveValue {
+public class Tyre extends Options {
     private String type;
     private double value;
 

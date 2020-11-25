@@ -1,5 +1,5 @@
-import Options.Engine;
-import Options.EngineType;
+import options.Engine;
+import options.EngineType;
 import org.junit.Before;
 import org.junit.Test;
 

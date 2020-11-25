@@ -1,6 +1,6 @@
-package Options;
+package options;
 
-public class Door extends Options implements IHaveValue{
+public class Door extends Options {
     Door door;
 
     private double value;

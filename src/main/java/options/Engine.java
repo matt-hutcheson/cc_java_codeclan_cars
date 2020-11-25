@@ -1,6 +1,6 @@
-package Options;
+package options;
 
-public class Engine extends Options implements IHaveValue{
+public class Engine extends Options {
     private EngineType type;
 
 
