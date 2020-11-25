@@ -1,11 +1,14 @@
 package Options;
 
 public class Engine extends Options implements IHaveValue{
-    private String type;
-    private double capacity;
+    private EngineType type;
 
-    public Engine(String type, double capacity){
+
+    public Engine(EngineType type){
         this.type = type;
-        this.capacity = capacity;
+    }
+
+    public EngineType getType(){
+        return this.type;
     }
 }
