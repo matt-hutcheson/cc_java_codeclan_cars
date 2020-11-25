@@ -1,24 +1,28 @@
 package cars;
 import options.ICalculateValue;
-import options.Options;
+import options.IGetValue;
 
 import java.util.ArrayList;
 
 
 public abstract class Car implements ICalculateValue {
+    private double totalPrice;
     private double price;
     private String make;
     private String model;
-    private ArrayList<Options> options;
+    private ArrayList<IGetValue> options;
 
     public Car(double price, String make, String model) {
         this.price = price;
         this.make = make;
         this.model = model;
         this.options = new ArrayList<>();
+        this.totalPrice = price;
     }
 
-//    public double calculateValue() {
-//
-//    }
+    public void calculateValue() {
+        for (IGetValue option: options){
+            this.totalPrice += option.getValue();
+        }
+    }
 }

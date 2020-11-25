@@ -1,5 +1,5 @@
 package options;
 
 public interface ICalculateValue {
-    double calculateValue();
+    void calculateValue();
 }
